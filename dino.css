@@ -1,0 +1,27 @@
+body {
+    font-family:'Meiryo', sans-serif, monospace;
+    text-align: center;
+}
+
+#board {
+    background-color: lightgray;
+    background-image: url('./img/bg.gif');
+    border-bottom: 1px solid black;
+}
+
+#restartButton {
+    position: absolute; /* Position relative to the nearest positioned parent (canvas) */
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    width: 76px; /* Set button width */
+    height: 68px; /* Set button height */
+    background-image: url('./img/reset2.png'); /* Path to your button image */
+    background-size: cover; /* Ensure the image fits the button */
+    background-position: center;
+    background-color: transparent;
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Show a pointer on hover */
+    display: none; /* Initially hidden */
+    z-index: 10; /* Ensure it appears above the canvas */
+}
